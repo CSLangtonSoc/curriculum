@@ -1,43 +1,8 @@
-# Lesson 1: Introduction
+# Lesson 1: Structuring with HTML
 
-Web development is the field of creating content for the web.
+HTML is the backbone of web pages, defining the content to be shown on the page.
 
-There are two main components of web development:
-
-## Front-end development
-
-Front-end development involves creating the visual component of the website, the part the user interacts with. This is known
-as the **client**.
-
-This involves HTML, CSS and JavaScript. Front-end developers must write code for browsers to interpret and display, so there
-is less flexibility in how you can arrange your code as it must be in a format that browsers can understand.
-
-More advanced software developers utilise tools known as **frameworks** which simplify
-and speed up the creation of user interfaces. Examples include React, Vue.js and Angular.
-
-In this module, we will stick to using vanilla, unmodified HTML, CSS and JS.
-
-## Back-end development
-
-Back-end development involves creating the functional component of the website, the software systems that run in the background that enable it to provide a service. This is known as the **server**, as the code usually runs on a remote server in the cloud.
-
-Back-end software systems are usually made with Python, JavaScript, Java, C# and more. There is much more variety in how you
-can create a back-end system as the implementation can be entirely decided by you.
-
-Server-side code is typically the main difficulty of making a website, as it determines the actual functionality it has.
-The client or front-end is simply there to display information and allow the user to input actions.
-
-## [Activity] Create a development environment
-
-In order to practice HTML, CSS and JS we will make an online code sandbox.
-
-1. Go to [codesandbox.io](https://codesandbox.io/).
-2. Sign up with your school account or GitHub
-3. Create a vanilla HTML + CSS sandbox
-
-## HTML Basics
-
-For now, we are just going to focus on the HTML aspect of the website.
+Follow the steps at the end of the previous lesson to create an HTML sandbox.
 
 Ensure on the left hand toolbar you have the
 `index.html` file open. It should look something like this:
@@ -68,6 +33,7 @@ purpose and a different definition.
 Every HTML tag has to be "closed" so that the browser knows where it starts and where it ends.
 
 Usually, it looks like this:
+
 ```html
 <tag>...</tag>
 ```
@@ -80,6 +46,7 @@ We can see this in the code, with `<html>`, `<title>`, `<body>` and `<h1>` etc..
 However, some special tags do not have any content inside and therefore do not need a closing tag.
 
 The closing identifier can be placed inside the opening tag, like this:
+
 ```html
 <tag />
 ```
@@ -123,22 +90,28 @@ The website you want to direct the browser to when the link is clicked is define
 ```
 
 Hyperlinks are often placed within other elements in order to create a single link within a block of text, such as here:
+
 ```html
-<p>You can find out more about the society <a href="https://langtoncompsci.tech/">here</a><p>
+<p>
+  You can find out more about the society
+  <a href="https://langtoncompsci.tech/">here</a>
+</p>
+<p></p>
 ```
+
 Just the text that you want to become a hyperlink is placed in the `<a>` tag.
 
 ### Grouping elements
 
-HTML is used to create a structure of elements on the page. This not only defines the content on the page, but also how 
+HTML is used to create a structure of elements on the page. This not only defines the content on the page, but also how
 it is laid out.
 
 Grouping several elements together using a tag is an essential part of front-end development, as it allows those elements to
 follow a specific rule, such as how they are displayed or what they look like.
 
-Elements are typically grouped using the `<div></div>` element. 
+Elements are typically grouped using the `<div></div>` element.
 
-There are other elements such as `<section>`, `<main>` and `<article>` which do the same purpose. However, these are no different in functionality as `<div>`, and are intended to be descriptive, helping describe what content is being grouped together. 
+There are other elements such as `<section>`, `<main>` and `<article>` which do the same purpose. However, these are no different in functionality as `<div>`, and are intended to be descriptive, helping describe what content is being grouped together.
 
 The `<div>` element can group elements together like this:
 
@@ -153,7 +126,7 @@ The `<div>` element can group elements together like this:
 </div>
 ```
 
-As you can see, different sections are separated from each other. In most websites, `<div>` elements are often highly 
+As you can see, different sections are separated from each other. In most websites, `<div>` elements are often highly
 nested in extremely complex website structures.
 
 `<div>` elements are also used to create boxes and containers on the page, which hold elements.
@@ -168,7 +141,11 @@ a `<div>` can group all kinds of elements together.
 They are defined like this, using one self-closing tag:
 
 ```html
-<img src="https://langtoncompsci.tech/assets/img/logo-light.png" width="903" height="252" />
+<img
+  src="https://langtoncompsci.tech/assets/img/logo-light.png"
+  width="903"
+  height="252"
+/>
 ```
 
 The image URL is defined with the `src` (source) attribute, and the image width and height (in pixels) using the `width` and `height` attributes.
