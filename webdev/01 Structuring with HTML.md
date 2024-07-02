@@ -96,7 +96,6 @@ Hyperlinks are often placed within other elements in order to create a single li
   You can find out more about the society
   <a href="https://langtoncompsci.tech/">here</a>
 </p>
-<p></p>
 ```
 
 Just the text that you want to become a hyperlink is placed in the `<a>` tag.
@@ -120,7 +119,7 @@ The `<div>` element can group elements together like this:
   <h1>About</h1>
   <p>The CS Society aims to teach CS to Year 12.</p>
 </div>
-</div>
+<div>
   <h1>When</h1>
   <p>Form time Tuesday & Wednesday + Period 5 Wednesday</p>
 </div>
