@@ -8,4 +8,4 @@ Below is a list of units we will be covering in the society.
 
 |       Unit       |                               Description                                |
 | :--------------: | :----------------------------------------------------------------------: |
-| [webdev](webdev) | An introduction to HTML, CSS, JS and backend web development (8 lessons) |
+| [webdev](webdev) | An introduction to HTML, CSS, JS and backend web development (4 lessons) |
